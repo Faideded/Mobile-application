@@ -1,0 +1,163 @@
+* {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+:root {
+    --bgcolor: #222222;
+    --headercolor: #8800a5;
+    --maintextcolor: #8c359e;
+    --mainshadowcolor: #a400ff;
+    --areacolor: #121212;
+    --mainnavcolor: #4b285c;
+    --mainfootercolor: #a400ff;
+}
+
+body{
+    background-color: var(--bgcolor);
+
+    header{
+        position: absolute;
+        top: 0; bottom: 0; left: 22vh; right: 0;
+        color: aliceblue;
+    } 
+
+    nav{
+        position: fixed;
+        width: 53vh;
+        height: 10vh;
+        background-color: var(--mainnavcolor);
+        top: 0; bottom: 0; left: 0; right: 0;
+
+        button{
+            background-color: var(--mainnavcolor);
+            border: none;
+        }
+    }
+
+    .nav-button{
+        position: absolute;
+        background-color: var(--areacolor);
+        display:block;
+        height: 45px;
+        width: 45px;
+        top: 15px; bottom: 0; left: 45vh; right: 0;
+        border-radius: 10px;
+    }
+
+    .nav-button-line{
+        position: relative;
+        background-color: #69008f;
+        height: 1.5vh;
+        width: 5vh;
+        border-radius: 10px;
+        top: 15%; bottom: 0; left: 4px; right: 0;
+    }
+
+    .nav-button-line2{
+        position: relative;
+        background-color: #69008f;
+        height: 1.5vh;
+        width: 5vh;
+        border-radius: 10px;
+        top: 2.5vh; bottom: 0; left: 0; right: 0;
+    }
+    
+    .expenses{
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 50vh;
+        height: 30vh;
+        border-radius: 38px;
+        background-color: var(--areacolor);
+        top: 12vh; bottom: 0; left: 2px; right: 0;
+
+        h1{ 
+            position: absolute;
+            display: flex;
+            color: var(--headercolor);
+            font-weight: bolder;
+        }
+
+        button {
+            display: flex;
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            top: -7%; bottom: 0; left: 25%; right: 0; 
+            border: none;
+            font-size: large;
+        }
+    }
+
+    .expenses-blur{
+        background-color: var(--mainshadowcolor);
+        position: absolute;
+        align-items: center;
+        width: 50vh;
+        height: 30vh;
+        border-radius: 38px;
+        top: 14vh; bottom: 0; left: 4%; right: 0;
+        filter: blur(2px);
+    }
+
+    /* .expenses-stats{} */
+
+    /* .balance{} */
+
+    .outgoing {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 38px;
+        background-color: var(--areacolor);
+        top: 14vh; bottom: 0; left: 40%; right: 0;
+
+        h1{ 
+            position: absolute;
+            color: var(--headercolor);
+            font-weight: bolder;
+            top: -7%; bottom: 0; left: 17.5%; right: 0;  
+        }   
+    }
+
+    .outgoing-blur{
+        background-color: var(--mainshadowcolor);
+        position: absolute;
+        align-items: center;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 38px;
+        top: 45.7vh; bottom: 0; left: 22.5vh; right: 0;
+        filter: blur(2px);
+    }
+
+    .footer-nav{
+        display: flex;
+        position: absolute;
+        width: 50vh;
+        height: 6vh;
+        border-radius: 10px;
+        background-color: var(--mainfootercolor);
+        top: 90vh; bottom: 0; left: 1.5vh; right: 0;
+    }
+
+    .footer-image {
+        position: absolute;
+        top: 5px; bottom: 0; left: 47.5%; right: 0;
+    }
+
+    .footer-image-background {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-color: var(--areacolor);
+        height: 40px;
+        width: 40px;
+        border-radius: 100px;
+    }
+}
