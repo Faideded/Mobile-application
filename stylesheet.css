@@ -8,11 +8,11 @@
 :root {
     --bgcolor: #222222;
     --headercolor: #8800a5;
-    --maintextcolor: #8c359e;
-    --mainshadowcolor: #a400ff;
+    --maintextcolor: #782c96;
+    --mainshadowcolor: #7934a4;
     --areacolor: #121212;
     --mainnavcolor: #4b285c;
-    --mainfootercolor: #a400ff;
+    --mainfootercolor: #7d2fa8;
 }
 
 body{
